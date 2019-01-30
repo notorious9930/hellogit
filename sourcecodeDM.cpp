@@ -16,7 +16,7 @@ int main()
   
   //the use of vectors
   vector<int> vec;
-  int a;
+  
   
   vec.push_back(5);
   vec.push_back(6);
@@ -28,34 +28,31 @@ int main()
    vec.push_back(v);
   }
   
-  for (unsigned int l=0; l<5; l++) //use of standard for loop with pop_back
-  {
-     vec.pop_back(l);
-   }
   
-  for(a=0; a< vec.size(); a++) //use of standard for loop for printing the elements in the vector
+  
+  for(unsigned int a=0; a < vec.size(); a++) //use of standard for loop for printing the elements in the vector
   {
-    cout<< "Vector: " << vec[i] << endl;
+    cout<< "Vector: " << vec[a] << endl;
+  }
+  
+  for (unsigned int l=0; l<1; l++) //use of standard for loop with pop_back
+  {
+     vec.pop_back();
   }
   
   for (auto vect: vec)// use of for loop with auto
   {
-    cout << vect;
+    cout << vect << endl;
   }
   
-  for (char ch: name)// use of for loop char
-  {
-   cout << ch;
-  }
   
   //the use of strings
   string s1="Great";
-  string s2= s1+ name;
-  
+  string s2= s1 + name;
   cout << "First string: "<< s1 << endl;
   cout << "Second character of first string: "<< s1[1] << endl;
   cout << "Second string: "<< s2 << endl;
-  cout << "Size of second string: " << s2.size() << endl;
+  cout << "Size of first string: " << s1.size() << endl;
   
   if (s1 == "Great")
   {
@@ -67,6 +64,9 @@ int main()
    cout << "Excellent" << endl;
   }
   
+  system("Pause");
+  return 0;
+ }
   
   
   
