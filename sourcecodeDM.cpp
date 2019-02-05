@@ -64,13 +64,6 @@ int main()
    cout << "Excellent" << endl;
   }
   
-  system("Pause");
+  
   return 0;
  }
-  
-  
-  
-  
-  
-  
-  
